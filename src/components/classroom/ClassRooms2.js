@@ -14,7 +14,6 @@ const ClassRoomCard2 = ({ reservation, classroom }) => {
       />
 
       <div className='classroom-card-info'>
-        <h3 className='classroom-number2'> {reservation.roomnumber} </h3>
         <div className='classroom-icons'>
           <FaTv color='var(--cphYellow)' size={15} />
           <FaChalkboardTeacher color='var(--cphYellow)' size={15} />
@@ -24,6 +23,7 @@ const ClassRoomCard2 = ({ reservation, classroom }) => {
         <p className='classroom-facility'> {classroom.facility2} </p>
         <p className='classroom-facility'> {classroom.facility3} </p>
       </div>
+        <h3 className='classroom-number2'> {reservation.roomnumber} </h3>
     </div>
   )
 }
