@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { supabase } from "@/pages/lib/helper/supabaseClient";
 import ClassRoomCard2 from "./classroom/ClassRooms2";
+import { cancelAlert } from "./alert/CancelAlert";
 
 
 
@@ -33,6 +34,7 @@ export default function ReservationBox({ reservation, classroom }) {
 
   return (
     <div className="reservations">
+    <div className="reservation-box">
       <ul>
         <li>
           <p><span className="subtitle">Dato:</span> {reservation.dato}</p>
@@ -40,6 +42,9 @@ export default function ReservationBox({ reservation, classroom }) {
           <p><span className="subtitle">Antal:</span> {reservation.antal}</p>
         </li>
       </ul>
+
+       
+
 
       {fetchError && <p> {fetchError} </p>}
       {ClassRooms && (
@@ -53,7 +58,12 @@ export default function ReservationBox({ reservation, classroom }) {
           ))}
         </div>
       )}
-
+      
+     
+    </div>
+    <div>
+        <button className="reservation-button" onClick={cancelAlert}>Cancel</button>
+      </div>
     </div>
   );
 }

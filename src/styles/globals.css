@@ -447,7 +447,20 @@ label {
   border-bottom: 1px solid var(--textColor);
   border-left: 1px solid var(--textColor);
 
+}
+
+.reservation-box {
   display: flex;
+}
+
+.reservation-button {
+  width: 100%;
+  background-color: var(--cphYellow) !important;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  height: 35px;
+  cursor: pointer;
 }
 
 .reservations ul {
