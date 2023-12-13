@@ -62,7 +62,7 @@ export default function ReservationBox({ reservation, classroom }) {
      
     </div>
     <div>
-        <button className="reservation-button" onClick={cancelAlert}>Cancell</button>
+        <button className="reservation-button" onClick={cancelAlert}>Cancel</button>
       </div>
     </div>
   );
